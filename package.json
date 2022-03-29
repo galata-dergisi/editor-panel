@@ -1,0 +1,25 @@
+{
+  "name": "@galata-dergisi/editor-panel",
+  "version": "1.0.0",
+  "description": "Galata Dergisi - Editor Panel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galata-dergisi/editor-panel.git"
+  },
+  "keywords": [
+    "galata",
+    "dergisi",
+    "editor",
+    "panel"
+  ],
+  "author": "Mehmet Baker <mehmet@mehmetbaker.dev> (https://mehmetbaker.dev)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/galata-dergisi/editor-panel/issues"
+  },
+  "homepage": "https://github.com/galata-dergisi/editor-panel#readme"
+}
