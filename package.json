@@ -2,9 +2,9 @@
   "name": "@galata-dergisi/editor-panel",
   "version": "1.0.0",
   "description": "Galata Dergisi - Editor Panel",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:backend": "nodemon --exec \"yarn ts-node src/apps/backend/index.ts\" -e ts,js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,24 @@
   "bugs": {
     "url": "https://github.com/galata-dergisi/editor-panel/issues"
   },
-  "homepage": "https://github.com/galata-dergisi/editor-panel#readme"
+  "homepage": "https://github.com/galata-dergisi/editor-panel#readme",
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "express": "^4.17.3",
+    "knex": "^1.0.4",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-prettier-config": "^1.0.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
 }
