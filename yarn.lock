@@ -86,7 +86,7 @@ __metadata:
     eslint-config-airbnb-base: latest
     eslint-prettier-config: ^1.0.1
     express: ^4.17.3
-    knex: ^1.0.4
+    knex: ^2.4.0
     mysql: ^2.18.1
     nodemon: ^2.0.15
     passport: ^0.5.2
@@ -1043,10 +1043,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colorette@npm:2.0.16":
-  version: 2.0.16
-  resolution: "colorette@npm:2.0.16"
-  checksum: cd55596a3a2d1071c1a28eee7fd8a5387593ff1bd10a3e8d0a6221499311fe34a9f2b9272d77c391e0e003dcdc8934fb2f8d106e7ef1f7516f8060c901d41a27
+"colorette@npm:2.0.19":
+  version: 2.0.19
+  resolution: "colorette@npm:2.0.19"
+  checksum: 888cf5493f781e5fcf54ce4d49e9d7d698f96ea2b2ef67906834bb319a392c667f9ec69f4a10e268d2946d13a9503d2d19b3abaaaf174e3451bfe91fb9d82427
   languageName: node
   linkType: hard
 
@@ -1057,10 +1057,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "commander@npm:8.3.0"
-  checksum: 0f82321821fc27b83bd409510bb9deeebcfa799ff0bf5d102128b500b7af22872c0c92cb6a0ebc5a4cf19c6b550fba9cedfa7329d18c6442a625f851377bacf0
+"commander@npm:^9.1.0":
+  version: 9.5.0
+  resolution: "commander@npm:9.5.0"
+  checksum: c7a3e27aa59e913b54a1bafd366b88650bc41d6651f0cbe258d4ff09d43d6a7394232a4dadd0bf518b3e696fdf595db1028a0d82c785b88bd61f8a440cecfade
   languageName: node
   linkType: hard
 
@@ -1190,7 +1190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3":
+"debug@npm:4, debug@npm:4.3.4, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
   dependencies:
@@ -1199,18 +1199,6 @@ __metadata:
     supports-color:
       optional: true
   checksum: 3dbad3f94ea64f34431a9cbf0bafb61853eda57bff2880036153438f50fb5a84f27683ba0d8e5426bf41a8c6ff03879488120cf5b3a761e77953169c0600a708
-  languageName: node
-  linkType: hard
-
-"debug@npm:4.3.3":
-  version: 4.3.3
-  resolution: "debug@npm:4.3.3"
-  dependencies:
-    ms: 2.1.2
-  peerDependenciesMeta:
-    supports-color:
-      optional: true
-  checksum: 14472d56fe4a94dbcfaa6dbed2dd3849f1d72ba78104a1a328047bb564643ca49df0224c3a17fa63533fd11dd3d4c8636cd861191232a2c6735af00cc2d4de16
   languageName: node
   linkType: hard
 
@@ -2046,6 +2034,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"get-package-type@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "get-package-type@npm:0.1.0"
+  checksum: bba0811116d11e56d702682ddef7c73ba3481f114590e705fc549f4d868972263896af313c57a25c076e3c0d567e11d919a64ba1b30c879be985fc9d44f96148
+  languageName: node
+  linkType: hard
+
 "get-stream@npm:^4.1.0":
   version: 4.1.0
   resolution: "get-stream@npm:4.1.0"
@@ -2776,15 +2771,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knex@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "knex@npm:1.0.4"
+"knex@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "knex@npm:2.4.0"
   dependencies:
-    colorette: 2.0.16
-    commander: ^8.3.0
-    debug: 4.3.3
+    colorette: 2.0.19
+    commander: ^9.1.0
+    debug: 4.3.4
     escalade: ^3.1.1
     esm: ^3.2.25
+    get-package-type: ^0.1.0
     getopts: 2.3.0
     interpret: ^2.2.0
     lodash: ^4.17.21
@@ -2794,8 +2790,6 @@ __metadata:
     tarn: ^3.0.2
     tildify: 2.0.0
   peerDependenciesMeta:
-    "@vscode/sqlite3":
-      optional: true
     better-sqlite3:
       optional: true
     mysql:
@@ -2806,11 +2800,13 @@ __metadata:
       optional: true
     pg-native:
       optional: true
+    sqlite3:
+      optional: true
     tedious:
       optional: true
   bin:
     knex: bin/cli.js
-  checksum: 7490763d92ff366732803a8bf721f88cd48ddab7794d2fd63a325996dcfc95d2cec7924d20c73cc45a7ba74d881531b6afdf6c5916c7e4673839a91f69603566
+  checksum: 66b4ae8412c61125b78512a66d924af95116628e16026efce4d03b80b2ced6b63208b37bb49fb52a499761da5e8981e136b48fcefcd48c3fe9fc72d9d17c5661
   languageName: node
   linkType: hard
 
